@@ -32,7 +32,7 @@ module.exports = class GeturlCommand extends Command {
 		
 		const user = getUser(msg.author);
 
-		if (user.level > game.maxLevel) return msg.reply('Good Job! You finished all the challenges.');
+		if (user.level >= game.maxLevel) return msg.reply('Good Job! You finished all the challenges.');
 		
 		return msg.reply(oneLine`
 			here is your next challenge: 	

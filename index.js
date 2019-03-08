@@ -14,7 +14,8 @@ client.registry
   .registerDefaults()
   .registerCommand(require('./commands/geturl'))
   .registerCommand(require('./commands/submit'))
-  .registerCommand(require('./commands/scoreboard'));
+  .registerCommand(require('./commands/scoreboard'))
+  .registerCommand(require('./commands/hint'));
   // .registerCommandsIn(path.join(__dirname, 'commands'));
 
 client.on('ready', () => {

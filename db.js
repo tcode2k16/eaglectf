@@ -21,7 +21,7 @@ function getUser(user) {
     id: user.id,
     level: 0,
     score: 0,
-    hints: new Array(game.challengeCount).fill(0),
+    hints: 0,
   };
 
   db
@@ -34,8 +34,8 @@ function getUser(user) {
 
 function levelUp(user) {
   db
-    .update(`users.${user.id}.level`, n => n + 1)
-    .update(`users.${user.id}.score`, n => n + game.points[user.level])
+  .update(`users.${user.id}.score`, n => n + game.points[user.level])
+  .update(`users.${user.id}.level`, n => n + 1)
     .write();
 }
 
@@ -43,9 +43,17 @@ function getRank() {
   return db.get('users').sortBy('score').value();
 }
 
+function unlockHint(user) {
+  db
+    .update(`users.${user.id}.hints`, n => n + 1)
+    .update(`users.${user.id}.score`, n => n - 1)
+    .write();
+}
+
 module.exports = {
   db,
   getUser,
   levelUp,
-  getRank
+  getRank,
+  unlockHint
 };
