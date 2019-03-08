@@ -1,0 +1,7 @@
+{
+  "challengeCount": 10,
+  "hintCount": [ 3, 3, 3, 3, 3, 1, 2, 3, 1, 2 ],
+  "urls": ["http://test.cf/level0", "http://test.cf/level1", "http://test.cf/level2", "http://test.cf/level3", "http://test.cf/level4", "http://test.cf/level5", "http://test.cf/level6", "http://test.cf/level7", "http://test.cf/level8", "http://test.cf/level9"],
+  "flags": ["flag0", "flag1", "flag2", "flag3", "flag4", "flag5", "flag6", "flag7", "flag8", "flag9"],
+  "points": [ 3, 3, 3, 3, 3, 1, 2, 3, 1, 2 ]
+}
