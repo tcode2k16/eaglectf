@@ -1,0 +1,8 @@
+{
+  "flag": "flag{inspect_elements_get!}",
+  "hints": [
+    "how can you view the source code for a web page",
+    "try right click and 'inspect elements' in chrome"
+  ],
+  "point": 5
+}

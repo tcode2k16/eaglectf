@@ -1,0 +1,8 @@
+{
+  "flag": "flag{welcome_to_eaglectf}",
+  "hints": [
+    "try the 'help' and 'submit' command",
+    "type in 'submit flag{welcome_to_eaglectf}'"
+  ],
+  "point": 5
+}

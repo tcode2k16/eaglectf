@@ -47,6 +47,8 @@ module.exports = class HintCommand extends Command {
 
     let user = getUser(msg.author);
 
+    if (user.level >= game.maxLevel) return msg.reply('Good Job! You finished all the challenges.');
+
     if (!confirm) {
       msg.reply(stripIndents`
         \`

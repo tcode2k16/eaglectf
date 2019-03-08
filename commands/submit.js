@@ -37,6 +37,8 @@ module.exports = class SubmitCommand extends Command {
 
     const user = getUser(msg.author);
 
+    if (user.level >= game.maxLevel) return msg.reply('Good Job! You finished all the challenges.');
+    
     if (flag === '') {
       msg.reply(`Please provide a flag for level ${user.level} by doing \`submit [flag]\``);
       return;

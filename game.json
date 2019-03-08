@@ -1,7 +1,1 @@
-{
-  "challengeCount": 10,
-  "hintCount": [ 3, 3, 3, 3, 3, 1, 2, 3, 1, 2 ],
-  "urls": ["http://test.cf/level0", "http://test.cf/level1", "http://test.cf/level2", "http://test.cf/level3", "http://test.cf/level4", "http://test.cf/level5", "http://test.cf/level6", "http://test.cf/level7", "http://test.cf/level8", "http://test.cf/level9"],
-  "flags": ["flag0", "flag1", "flag2", "flag3", "flag4", "flag5", "flag6", "flag7", "flag8", "flag9"],
-  "points": [ 3, 3, 3, 3, 3, 1, 2, 3, 1, 2 ]
-}
+{"maxLevel":2,"hints":[["try the 'help' and 'submit' command","type in 'submit flag{welcome_to_eaglectf}'"],["try the 'help' and 'submit' command","type in 'submit flag{welcome_to_eaglectf}'"]],"urls":["https://eaglectf.surge.sh/cf1a4cc4507cd","https://eaglectf.surge.sh/b6ee196c468dc"],"flags":["flag{welcome_to_eaglectf}","flag{welcome_to_eaglectf}"],"points":[5,5]}
