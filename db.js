@@ -32,7 +32,20 @@ function getUser(user) {
   return dbUser;
 }
 
+function levelUp(user) {
+  db
+    .update(`users.${user.id}.level`, n => n + 1)
+    .update(`users.${user.id}.score`, n => n + game.points[user.level])
+    .write();
+}
+
+function getRank() {
+  return db.get('users').sortBy('score').value();
+}
+
 module.exports = {
   db,
   getUser,
+  levelUp,
+  getRank
 };

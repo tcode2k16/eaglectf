@@ -1,7 +1,7 @@
 const { oneLine } = require('common-tags');
 const Commando = require('discord.js-commando');
 
-const { db, getUser } = require('../db');
+const { db, getUser, levelUp } = require('../db');
 
 const game = require('../game.json');
 
@@ -28,11 +28,6 @@ module.exports = class SubmitCommand extends Command {
 		});
 	}
 
-  onBlocked(msg) {
-    console.log(msg);
-    return;
-  }
-
 	run(msg, { flag }) {
     if (msg.channel.type !== 'dm') {
       msg.author.createDM().then(c => c.send('You can only use this command in direct message'));
@@ -52,10 +47,7 @@ module.exports = class SubmitCommand extends Command {
       return;
     }
 
-    db
-      .update(`users.${user.id}.level`, n => n + 1)
-      .update(`users.${user.id}.score`, n => n + game.points[user.level])
-      .write();
+    levelUp(user);
 
     return msg.reply(oneLine`
       Correct flag. Congratulations!

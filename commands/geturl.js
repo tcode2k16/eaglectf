@@ -11,6 +11,7 @@ module.exports = class GeturlCommand extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'geturl',
+			aliases: ['url'],
 			group: 'ctf',
 			memberName: 'geturl',
 			description: 'Get the url for the next challenge',
