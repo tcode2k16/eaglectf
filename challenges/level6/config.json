@@ -1,0 +1,9 @@
+{
+  "flag": "flag{xor_and_hex}",
+  "hints": [
+    "You have to decode the encrypted text from hex first.",
+    "Then you need to xor it with the key",
+    "Give CyberChef a try"
+  ],
+  "point": 5
+}
