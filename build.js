@@ -34,10 +34,10 @@ for (let i = 0; i < dirs.length; i++) {
   game.urls.push(`${config.isHttps ? 'https' : 'http' }://${config.domain}/${token}`);
   fs.mkdirSync(`${dirName}/${token}`);
   
-  for (let file of fs.readdirSync(levelPath)) {
-    if (file === 'config.json') continue;
-    fs.copyFileSync(`${levelPath}/${file}`, `${dirName}/${token}/${file}`);
-  }
+  fs.copySync(`${levelPath}/`, `${dirName}/${token}`);
+
+  if (fs.existsSync(`${dirName}/${token}/config.json`)) fs.removeSync(`${dirName}/${token}/config.json`);
+  if (fs.existsSync(`${dirName}/${token}/res`)) fs.removeSync(`${dirName}/${token}/res`);
   
 }
 
