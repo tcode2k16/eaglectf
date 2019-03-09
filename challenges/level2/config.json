@@ -1,0 +1,8 @@
+{
+  "flag": "flag{m3m3machin3}",
+  "hints": [
+    "You can't spot the difference with your eyes. How could you find the difference using a program?",
+    "There are many image difference services online, maybe you should try those."
+  ],
+  "point": 5
+}
