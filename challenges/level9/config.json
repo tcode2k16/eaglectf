@@ -1,0 +1,8 @@
+{
+  "flag": "flag{one_two_three_four}",
+  "hints": [
+    "Have you tried incrementing the number.",
+    "The 'requests' library would be useful if you are doing this in python."
+  ],
+  "point": 5
+}
