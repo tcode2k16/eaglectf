@@ -1,0 +1,8 @@
+{
+  "flag": "flag{javascript_is_the_best}",
+  "hints": [
+    "It's one of the top 10 programming languages.",
+    "Almost every website uses it."
+  ],
+  "point": 5
+}
