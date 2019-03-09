@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Level 7</title>
+</head>
+
+<body>
+  <h1>Level 7</h1>
+  <br>
+  <p>Time to read some code.</p>
+  <br>
+  <p><b>Super safe login</b></p>
+  <br>
+  <input type="text" id="password" placeholder="password" />
+
+  <button onclick="checkPassword()">check</button>
+  <br>
+  <script>
+
+    // https://codereview.stackexchange.com/questions/132125/rot13-javascript
+    function rot13(str) {
+      var input = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+      var output = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm';
+      var index = x => input.indexOf(x);
+      var translate = x => index(x) > -1 ? output[index(x)] : x;
+      return str.split('').map(translate).join('');
+    }
+
+    // https://www.w3resource.com/javascript-exercises/javascript-string-exercise-28.php
+    function hex_to_ascii(str1) {
+      var hex = str1.toString();
+      var str = '';
+      for (var n = 0; n < hex.length; n += 2) {
+        str += String.fromCharCode(parseInt(hex.substr(n, 2), 16));
+      }
+      return str;
+    }
+
+    function checkPassword() {
+      const input = document.querySelector('#password').value;
+      let flag = '666p61677o6r657665725s7665726966795s70617373776s72645s6s6r5s7468655s636p69656r745s736964657q';
+      flag = rot13(flag);
+      flag = hex_to_ascii(flag);
+      if (input === flag) {
+        alert(`You got it! the flag is: ${input}`);
+      } else {
+        alert('Wrong password. Go away.');
+      }
+    }
+
+  </script>
+</body>
+
+</html>

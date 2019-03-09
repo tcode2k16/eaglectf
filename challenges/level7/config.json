@@ -1,0 +1,9 @@
+{
+  "flag": "flag{never_verify_password_on_the_client_side}",
+  "hints": [
+    "Take a look at the javascript on the page.",
+    "Can you run the same code somewhere else?",
+    "The javascript console in the browser is a good place to test things out."
+  ],
+  "point": 5
+}
