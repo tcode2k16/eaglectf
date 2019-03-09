@@ -1,0 +1,8 @@
+{
+  "flag": "flag{caesar_cipher}",
+  "hints": [
+    "Have you heard of the caesar cipher?",
+    "They say the shift is 13 whatever that means."
+  ],
+  "point": 5
+}
