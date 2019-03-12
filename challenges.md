@@ -9,9 +9,11 @@
 - 08 java reverse
 - 09 http brute force
 - 10 c crackme
+- 11 zip file in image
+- 12 hash cracking
+- 13 binwalk
 
 - TODO
-- hash cracking
 - easier c crackme
-- zip file in image
+- 
 - 
