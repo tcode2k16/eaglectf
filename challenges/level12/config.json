@@ -1,0 +1,8 @@
+{
+  "flag": "flag{school}",
+  "hints": [
+    "What type of hash is this?",
+    "There are websites that can help you."
+  ],
+  "point": 5
+}
