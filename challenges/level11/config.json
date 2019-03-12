@@ -1,0 +1,8 @@
+{
+  "flag": "flag{anotherbrokenzipper}",
+  "hints": [
+    "Is this file really an mp3? How can you tell?",
+    "Files have identifiers, how can you open this file in a text editor to find its identifier?"
+  ],
+  "point": 5
+}
