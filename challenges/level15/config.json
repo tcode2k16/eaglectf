@@ -1,0 +1,8 @@
+{
+  "flag": "flag{easy_c_crackme}",
+  "hints": [
+    "Do you really have to read the assembly code?",
+    "Try a hex editor."
+  ],
+  "point": 5
+}
