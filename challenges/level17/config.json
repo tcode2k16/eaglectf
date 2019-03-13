@@ -1,0 +1,8 @@
+{
+  "flag": "flag{math_is_fun}",
+  "hints": [
+    "The wikipedia page is a good place to start.",
+    "This might be helpful: https://www.cs.drexel.edu/~jpopyack/IntroCS/HW/RSAWorksheet.html"
+  ],
+  "point": 5
+}

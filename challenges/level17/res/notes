@@ -1,0 +1,10 @@
+>>> p = 13
+>>> q = 17
+>>> n = p*q
+>>> e = 5
+>>> d = 77
+>>> m = 0x41
+>>> [pow(ord(c), e, n) for c in 'flag{math_is_fun}']
+[85, 75, 54, 103, 106, 96, 54, 12, 117, 23, 209, 98, 23, 85, 104, 145, 177]
+>>> ''.join([chr(pow(x, d, n)) for x in _])
+'flag{math_is_fun}'
