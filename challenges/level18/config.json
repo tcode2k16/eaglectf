@@ -1,0 +1,8 @@
+{
+    "flag": "flag{never_trust_user_input}",
+    "hints": [
+        "How could we convince the database that we know the password?",
+        "Look up 'SQL Injection'"
+    ],
+    "point": 5
+}
