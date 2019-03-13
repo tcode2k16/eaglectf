@@ -1,0 +1,8 @@
+{
+  "flag": "flag{use_version_control!}",
+  "hints": [
+    "Can you see what is deleted? What is a git commit?",
+    "Try 'git log' in the terminal."
+  ],
+  "point": 5
+}
