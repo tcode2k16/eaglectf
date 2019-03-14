@@ -1,8 +1,9 @@
 {
-  "flag": "flag{easy_c_crackme}",
+  "flag": "flag{the_least_significant_bits}",
   "hints": [
-    "Do you really have to read the assembly code?",
-    "Try a hex editor."
+    "This binary string can also be thought of as a series of bytes. How could you hide secret information inside a series of bytes and make minimal changes to the individual bytes themselves?",
+    "Look up least significant bit.",
+    "Find the least significant bit for every byte in the string and convert to ascii."
   ],
   "point": 5
 }

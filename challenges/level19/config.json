@@ -1,8 +1,8 @@
 {
-    "flag": "flag{extreme1ysecur3}",
-    "hints": [
-        "Is there a way that the password could be guessed character by character?",
-        "SQL has wildcards"
-    ],
-    "point": 5
+  "flag": "flag{welcome_to_c_reversing}",
+  "hints": [
+    "What type of file is this?",
+    "NSA can help you out help. Give Ghidra a try."
+  ],
+  "point": 5
 }

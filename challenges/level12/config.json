@@ -1,8 +1,9 @@
 {
-  "flag": "flag{school}",
+  "flag": "flag{java_java_JAVA}",
   "hints": [
-    "What type of hash is this?",
-    "There are websites that can help you."
+    "Try running the program.",
+    "A java decompiler would be helpful.",
+    "If one decompiler doesn't work, try another one."
   ],
   "point": 5
 }

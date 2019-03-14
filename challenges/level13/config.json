@@ -1,9 +1,8 @@
 {
-  "flag": "flag{rudwickhateschurros}",
+  "flag": "flag{one_two_three_four}",
   "hints": [
-    "The flag is \"in\" the image, but you can't see it.",
-    "The flag is hidden as a file inside the jpeg. How can you get it out?",
-    "binwalk"
+    "Have you tried incrementing the number.",
+    "The 'requests' library would be useful if you are doing this in python."
   ],
   "point": 5
 }

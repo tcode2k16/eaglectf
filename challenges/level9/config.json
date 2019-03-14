@@ -1,8 +1,8 @@
 {
-  "flag": "flag{one_two_three_four}",
+  "flag": "flag{school}",
   "hints": [
-    "Have you tried incrementing the number.",
-    "The 'requests' library would be useful if you are doing this in python."
+    "What type of hash is this?",
+    "There are websites that can help you."
   ],
   "point": 5
 }

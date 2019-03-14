@@ -1,8 +1,8 @@
 {
-  "flag": "flag{math_is_fun}",
-  "hints": [
-    "The wikipedia page is a good place to start.",
-    "This might be helpful: https://www.cs.drexel.edu/~jpopyack/IntroCS/HW/RSAWorksheet.html"
-  ],
-  "point": 5
+    "flag": "flag{extreme1ysecur3}",
+    "hints": [
+        "Is there a way that the password could be guessed character by character?",
+        "SQL has wildcards"
+    ],
+    "point": 5
 }

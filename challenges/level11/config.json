@@ -1,8 +1,8 @@
 {
-  "flag": "flag{anotherbrokenzipper}",
+  "flag": "flag{javascript_is_the_best}",
   "hints": [
-    "Is this file really an mp3? How can you tell?",
-    "Files have identifiers, how can you open this file in a text editor to find its identifier?"
+    "It's one of the top 10 programming languages.",
+    "Almost every website uses it."
   ],
   "point": 5
 }

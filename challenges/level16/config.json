@@ -1,8 +1,8 @@
 {
-  "flag": "flag{use_version_control!}",
+  "flag": "flag{math_is_fun}",
   "hints": [
-    "Can you see what is deleted? What is a git commit?",
-    "Try 'git log' in the terminal."
+    "The wikipedia page is a good place to start.",
+    "This might be helpful: https://www.cs.drexel.edu/~jpopyack/IntroCS/HW/RSAWorksheet.html"
   ],
   "point": 5
 }

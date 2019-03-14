@@ -1,9 +1,9 @@
 {
-  "flag": "flag{java_java_JAVA}",
+  "flag": "flag{rudwickhateschurros}",
   "hints": [
-    "Try running the program.",
-    "A java decompiler would be helpful.",
-    "If one decompiler doesn't work, try another one."
+    "The flag is \"in\" the image, but you can't see it.",
+    "The flag is hidden as a file inside the jpeg. How can you get it out?",
+    "binwalk"
   ],
   "point": 5
 }
