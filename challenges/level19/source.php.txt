@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Get Password</title>
+</head>
+<body>
+<h1>Get Password</h1>
+<?php
+$hostname = "localhost:3306";
+$username = "ctf";
+$password = "REDACTED";
+$database = "REDACTED";
+if(isset($_POST["password"]))   {
+    try {
+        $mysqli = new mysqli($hostname, $username, $password, $database);
+        mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+        if(mysqli_connect_errno())  {
+            printf("Connection to SQL server failed for following reason: %s", $mysqli_connect_error());
+        }
+        $query = "SELECT code FROM codetable WHERE password = '" . $_POST['password'] . "'";
+        $stmt = $mysqli->prepare($query);
+        $stmt->execute();
+        $stmt->bind_result($flag);
+        if($stmt->fetch())  {
+            printf("You have logged in but you don't have a code");
+        } else {
+            printf("Your password was not found in the database. <br /><br />");
+        }
+        $stmt->close();
+
+    } catch (Exception $e)  {
+        printf("Malformed SQL Request <br /><br />");
+    }
+}
+?>
+<form action="" method="POST">
+<div>
+<label>Password: <input type="text" id="password" name="password" /></label>
+<button type="submit">Submit</button>
+</div>
+</form>
+</body>
+</html>
+

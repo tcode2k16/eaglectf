@@ -1,0 +1,8 @@
+{
+    "flag": "flag{extreme1ysecur3}",
+    "hints": [
+        "Is there a way that the password could be guessed character by character?",
+        "SQL has wildcards"
+    ],
+    "point": 5
+}
