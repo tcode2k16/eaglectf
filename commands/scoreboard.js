@@ -35,18 +35,35 @@ module.exports = class ScoreboardCommand extends Command {
     output.push(['No.', 'username', 'score', 'level']);
     const rank = getRank();
 
-    let i = 1;
+    let i = 0;
+    let past = {
+      rank: i,
+      level: 0,
+      score: 0,
+    };
+
     for (let j = rank.length-1; j >= 0; j--) {
       let user = rank[j];
-      if (user.id === author.id) {
-        output.push(['*'+i+'*', user.name, user.score, user.level]);
-      } else {
-        output.push([i, user.name, user.score, user.level]);
-      }
       
       i++;
+      if (user.level != past.level || user.score != past.score) {
+        past = {
+          rank: i,
+          level: user.level,
+          score: user.score,
+        };
+      }
+      
+      if (user.id === author.id) {
+        output.push(['*'+past.rank+'*', user.name, user.score, user.level]);
+      } else {
+        output.push([past.rank, user.name, user.score, user.level]);
+      }
     }
 
-    return msg.reply('`'+table(output)+'`');
+    return msg.reply(table(output), {
+      split: true,
+      code: true,
+    });
 	}
 };

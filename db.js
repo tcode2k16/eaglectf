@@ -40,7 +40,7 @@ function levelUp(user) {
 }
 
 function getRank() {
-  return db.get('users').sortBy('score').value();
+  return db.get('users').sortBy(['score', 'level']).value();
 }
 
 function unlockHint(user) {

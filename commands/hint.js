@@ -51,15 +51,16 @@ module.exports = class HintCommand extends Command {
 
     if (!confirm) {
       msg.reply(stripIndents`
-        \`
         You can spend a point to receive an extra hint? Do "hint true".
         ${this._getHints(user)}
-        \`
-      `);
+      `, {
+        split: true,
+        code: true,
+      });
       return;
     }
 
-    let output = '`';
+    let output = '';
 
     if (user.hints >= game.hints[user.level].length) {
       output += 'You got all the hints already\n';
@@ -69,9 +70,11 @@ module.exports = class HintCommand extends Command {
     }
 
     output += this._getHints(user);
-    output += '`';
 
-    return msg.reply(output);
+    return msg.reply(output, {
+      split: true,
+      code: true,
+    });
 
 
 
