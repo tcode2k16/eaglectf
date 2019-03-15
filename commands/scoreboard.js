@@ -38,13 +38,13 @@ module.exports = class ScoreboardCommand extends Command {
     let i = 0;
     let past = {
       rank: i,
-      level: 0,
-      score: 0,
+      level: -1,
+      score: -1,
     };
 
     for (let j = rank.length-1; j >= 0; j--) {
       let user = rank[j];
-      
+
       i++;
       if (user.level != past.level || user.score != past.score) {
         past = {
